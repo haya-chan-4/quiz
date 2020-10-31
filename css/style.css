@@ -1,0 +1,131 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #efdec1;
+  font-weight: Verdana, Sans-Serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .container {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  position: relative;
+}
+
+body .container #question {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+body .container #choices {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+body .container #choices li {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+body .container #choices li:hover {
+  opacity: 0.7;
+  background-color: #cccccc;
+}
+
+body .container #choices li.correct {
+  font-weight: bold;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+body .container #choices li.correct::after {
+  content: ' ... ○';
+  font-weight: bold;
+}
+
+body .container #choices li.wrong {
+  font-weight: bold;
+  background-color: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+body .container #choices li.wrong::after {
+  content: ' ... ×';
+}
+
+body .container #btn {
+  background-color: #3498db;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 0 #2880b9;
+          box-shadow: 0 4px 0 #2880b9;
+}
+
+body .container #btn.disabled {
+  background-color: #ccc;
+  -webkit-box-shadow: 0 4px 0 #bbb;
+          box-shadow: 0 4px 0 #bbb;
+  opacity: 0.7;
+}
+
+body #result {
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+body #result p {
+  font-size: 24px;
+}
+
+body #result a {
+  background-color: #3498db;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 0 #2880b9;
+          box-shadow: 0 4px 0 #2880b9;
+  display: block;
+}
+
+body #result.hidden {
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+}
+/*# sourceMappingURL=style.css.map */
